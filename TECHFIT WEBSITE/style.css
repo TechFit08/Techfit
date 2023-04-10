@@ -1,0 +1,456 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 70.5%;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+ 
+  overflow-x: hidden;
+}
+
+
+
+body {
+  background: darkslategray;
+}
+
+section {
+  padding: 5rem 9%;
+}
+
+.second {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.second::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: .1rem;
+  width: 100%;
+  background: #aaa;
+  z-index: -1;
+}
+
+.second span {
+  font-size: 4rem;
+  color: black;
+  background: darkslategray;
+  padding: .5rem 1.5rem;
+  border: 0.1rem solid #aaa;
+  border-radius: .5rem;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  padding-right: 3rem;
+  background: linear-gradient(130deg, black , transparent 0%);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 9%;
+  z-index: 10000;
+  background: #000;
+}
+
+.header .logo {
+  font-weight: bolder;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.header .logo span {
+  color: skyblue;
+}
+
+.header .navbar a {
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+.header .navbar a:hover {
+  background: lightblue;
+}
+
+#menu-btn {
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+.home {
+  padding: 0;
+  margin-top: 5rem;
+}
+
+.home .slide {
+  min-height: 70vh;
+  background-size: cover !important;
+  background-position: center !important;
+  padding: 2rem 9%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .slide .first {
+  height: 0.2rem;  
+  width: 35rem;
+}
+
+.home .slide .first span {
+   
+  font-size: 3.9rem;
+  color: palegreen;
+  display: block;
+}
+
+.home .slide .first h2 {
+  font-size: 2.9rem;
+  color: #fff;
+  padding: 0rem 0;
+}
+
+.swiper-pagination-bullet {
+  height: 2rem;
+  width: 2rem;
+  background: #fff;
+  border-radius: 0;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #f00;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8rem;
+}
+
+         /*FROM HERE WE REMOVE THE IMAGE CSS CODE */
+.image{
+    background: black;   /*added*/
+}         
+
+.about .first {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+}
+
+.about .first span {
+  font-size: 2rem;
+  color: darkgoldenrod;
+}
+
+.about .first .title {
+  font-size: 4rem;
+  color: #fff;
+  margin-top: .5rem;
+}
+
+.about .first p {
+  font-size: 1.5rem;
+  color: #aaa;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.about .first .box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.about .first .box-container .box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+}
+
+.about .first .box-container .box h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.about .first .box-container .box h3 i {
+  padding-right: 1.5rem;
+  color: #f00;
+}
+
+.features .second span{
+  font-size: 5rem;
+  color:#aaa;
+  
+}
+
+.features .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 1.5rem;
+  gap: 0;
+}
+
+.features .box-container .box {
+  background: lightsteelblue;
+}
+
+.features .box-container .box.second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: column-reverse;
+          flex-flow: column-reverse;
+}
+
+.features .box-container .box:hover .image img {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.features .box-container .box .image {
+  height: 30rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.features .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.features .box-container .box .information {
+  padding: 2rem;
+  text-align: center;
+}
+
+.features .box-container .box .information img {
+  height: 9rem;
+  margin-bottom: 1rem;
+  -webkit-filter: invert(1.2);
+          filter: invert(1.2);  
+}
+
+.features .box-container .box .information h3 {
+  font-size: 2rem;                            
+  color: blueviolet;           
+}
+
+.features .box-container .box .information p {
+  line-height: 2;
+  font-size: 1.4rem;
+  color: black;
+  padding: 1rem 0;
+}
+
+.sportstrainers .heading span{
+
+  font-size: 5rem;
+  color:#aaa;
+  padding: 39.9rem;
+  
+}
+
+.sportstrainers .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(29rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+  gap: 1.5rem;
+}
+
+.sportstrainers .box-container .box {
+  height: 40rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.sportstrainers .box-container .box:hover .information {
+  -webkit-transform: translateZ(0.0);                        /*for sports exercise names animation*/
+          transform: translateZ(0.0);
+}
+
+.sportstrainers .box-container .box img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sportstrainers .box-container .box .information {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  padding: 2rem;
+  -webkit-transform: translateY(7.8rem);
+          transform: translateY(7.8rem);
+}
+
+.sportstrainers .box-container .box .information span {
+  font-size: 1.5rem;
+  color: #f00;
+}
+
+.sportstrainers .box-container .box .information h3 {
+  font-size: 1.9rem;
+  color: #fff;
+  padding-top: .4rem;
+}
+
+.sportstrainers .box-container .box .information .share {
+  padding-top: 2rem;
+  margin-top: 1.5rem;
+  border-top: 0.1rem solid #aaa;
+}
+
+.sportstrainers .box-container .box .information .share a {
+  font-size: 2rem;
+  color: #fff;
+  margin-right: 1.5rem;
+}
+
+.sportstrainers .box-container .box .information .share a:hover {
+  color: #f00;
+}
+
+
+
+.review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.review .related {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 35rem;
+          flex: 1 1 35rem;
+}
+
+.review .related span {
+  font-size: 2rem;
+  color: #f00;
+}
+
+.review .related h3 {
+  font-size: 3rem;
+  color: #fff;
+  padding-top: 1rem;
+}
+
+.review .related p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #aaa;
+  padding: 1rem 0;
+}
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+.contact .page span{
+  font-size: 4rem;
+}
