@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechFit</title>
 
-   
+   <ambed>     </ambed>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
@@ -30,8 +30,12 @@
         <a href="#about">ABOUT</a>
         <a href="#features">FEATURES</a>
         
-        <a href="#trainers">SPORTS</a>
-        <a href="#blogs">CONTACT US</a>
+        <a href="#sports">SPORTS</a>
+        
+        <a href="#log-in">LOGIN-SIGNUP</a>
+       
+        <a href="#contact">CONTACT US</a>
+      
     </nav>
 
 </header>
@@ -44,7 +48,7 @@
 
         <div class="swiper-wrapper">
 
-            <div class="swiper-slide slide" style="background: url(background.jpg) no-repeat;">
+            <div class="swiper-slide slide" style="background: url(BACKGROUND.jpg) no-repeat;">
                 <div class="first">
                     <span>BUILD YOURSELF</span>
                     <h2>make yourself</h2>
@@ -141,7 +145,7 @@
                     3] Bhujangasana.<br>
                     4] Trikonasana.<br>
                     5] Tadasana.</p>
-                    <a href=""></a>
+                    
              
             </div>
         </div>
@@ -153,17 +157,21 @@
             <div class="information">
                 <img src="images/icon-3.png" alt="">
                 <h3>Legs</h3>
-                <p><a href="https://www.youtube.com/watch?v=-bJIpOq-LWk" class="btn">1]Barbell Back Squat.</a><br>
-                   <a href="https://www.youtube.com/watch?v=tlfahNdNPPI" class="btn">2] Barbell Front Squat.</a><br>
-                    3] Olympic Lifts: Snatch and Power Clean.<br>
-                    4] Deadlift.<br>
+                <p>  
+                   
+                    1]Barbell Back Squat.<br>
+                    2] Barbell Front Squat.<br>
+                    3]Side lunge.<br>
+                    4] Deadlift.<br>  
                     5] Split Squat.<br>
                     6] Hack Squat.<br>
                     7] Lunge.<br>
                     8] Leg Press.<br>
                     9] Romanian Deadlift.<br>
                     10] Leg Curl.</p>
-            
+                    
+                    
+                   
             </div>
         </div>
 
@@ -177,7 +185,7 @@
 
 <!-- sports part starts  -->
 
-<section class="sportstrainers" id="trainers">
+<section class="sportstrainers" id="sports">
 
     <h1 class="heading"> <span>Sports</span></h1>
     <h2>coming soon></h2>
@@ -289,17 +297,22 @@
 </section>
 
      
-                                  <!--WORK IN PROGESS-->
+                                  <!--BACKEND WORK IN PROGESS-->
 
-        <section class="contact" id="blogs">  
+      <section class="login-signup" id="log-in"> 
+            
+    
 <form action="/register" method="POST">
     <h2>Registration Form</h2>
     <label for="username">Username:</label>
     <input type="text" placeholder="Name" id="username" name="username" required>
-    <h2>your email</h2>
+    <label for="email">email:</label>
     <input type="Email" placeholder="Email">
-    <label for="password">Password:</label>
+    <label for="number">number:</label>
+    <input type="text" placeholder="Number" id="number" name="number" required>
+    <label for="password">password:</label>
     <input type="password" placeholder="Password" id="password" name="password" required>
+
     <button type="submit">Register</button>
   </form>
   
@@ -311,17 +324,40 @@
     <label for="password">Password:</label>
     <input type="password" placeholder="Password" id="password" name="password" required>
     <button type="submit">Login</button>
+    
+       
+   
   </form>
   <div class="page">
-  <span>Contact Us</span><br>
+ 
+
+  <section class="email" id="contact">
+    <h1>Contact Us</h1><br>
  
     <a href="mailto:shreyya373@gamil.com"><br><h2>shreyya373@gmail.com</h2>
     <a href="mailto:shreyasharma130815@gmail.com"><br><h2>shreyasharma130815@gmail.com</h2>
-    <a href="mailto:shuklashreyansh0207@gmail.com"><br><h2>shuklashreyansh0207@gmail.com</h2>
+    <a href="mailto:shuklashreyansh0207@gmail.com"><br><h2>shuklashreyansh0207@gmail.com</h2></a>
+
+        <div class="form-container">
+            <h1>Enquiry Form</h1>
+            <form action="/submit_enquiry" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
      
 </div>
 
+
+
   </section>
+                         
+           
+<!--UNDER DEVELOPMENT-->
 
 
 
@@ -329,6 +365,7 @@
 
  custom js file link  
 <script src="js/script.js"></script> -->
+
 
 </body>
 </html>
